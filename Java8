@@ -1,0 +1,78 @@
+JAVA 8:
+
+1> Default method in interface
+     Can make static methods in interface
+Class extend class has more superiority then class implement interface
+
+2>ForEach method
+//Internal for loop 
+//faster then normal for loop
+Eg: int[]arr={1,2,3,4,5};
+arr.forEach(t->System.out.println(t));
+
+
+3> Lambda expression:
+
+Eg: 
+
+Interface A{
+	Void show();
+}
+
+
+main(){
+	
+	A obj=new A(){
+			Public void show(){
+				System.out.println(“hello”);		
+}
+};
+
+obj.show();
+
+}
+
+Converts to
+
+main(){
+	
+	A obj=()->System.out.println(“hello”);
+obj.show();
+
+}
+
+4>Functional interface:
+    Interface contains only one method
+
+
+5> Stream API
+
+ Process large amount of data.
+ Provide various functions.
+ Provide parallel processing too  (parallelstream)
+ One stream use only once we are not able to use same stream twice.
+
+Eg:
+
+List<Integer>list=Arrays.asList(1,2,3,4,5,6);
+Stream s=list.stream();
+
+s.forEach(i->System.out.println())  // run perfectly
+s.forEach(i->System.out.println())  // run same stream second time gives error
+
+
+6> Date Time API
+
+Before java 8:
+  Not thread safe.
+  Need Several packages
+  
+New changes:
+ Immutable 
+ Thread safe
+ 
+
+7>Method reference
+
+
+Telusko playlist: https://www.youtube.com/watch?v=svQKKg3aFzo&list=PLsyeobzWxl7qbvNnJKjYbkTLn2w3eRy1Q&index=10
